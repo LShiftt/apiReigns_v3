@@ -1,0 +1,18 @@
+meta {
+  name: Ajouter un like
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:8000/v1/reigns/deck/like
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "5"
+  }
+  
+}

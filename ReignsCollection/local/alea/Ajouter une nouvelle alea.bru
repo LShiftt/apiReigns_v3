@@ -1,0 +1,20 @@
+meta {
+  name: Ajouter une nouvelle alea
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/v1/reigns/carteAlea
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "num": 36,
+      "idCrea": 21,
+      "idDeck": 9
+    }
+  
+}

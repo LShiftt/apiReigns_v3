@@ -1,0 +1,18 @@
+meta {
+  name: Afficher un admin dont l'email est renseigné
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://mdubois.alwaysdata.net/apiReigns/v3/reigns/administrateur/mail
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mail" : "admin@gmail.com"
+  }
+  
+}

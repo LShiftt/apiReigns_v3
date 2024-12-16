@@ -1,0 +1,25 @@
+meta {
+  name: Ajouter une nouvelle carte
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/v1/reigns/carte
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "texte": "Texte ajouté par l'api iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+      "valChoix1": "10/-5",
+      "valChoix2": "10/-5",
+      "date": "2024-11-20",
+      "ordre": 1,
+      "idCrea": 21,
+      "idAdmin": null,
+      "idDeck": 9
+    }
+  
+}

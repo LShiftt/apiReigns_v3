@@ -1,0 +1,19 @@
+meta {
+  name: testMin Max
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8000/v3/reigns/deck/valid/minmax
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "min": 1,
+    "max": 4
+  }
+  
+}

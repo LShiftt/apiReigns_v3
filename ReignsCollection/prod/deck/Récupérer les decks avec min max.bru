@@ -1,0 +1,19 @@
+meta {
+  name: Récupérer les decks avec min max
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://mdubois.alwaysdata.net/apiReigns/v3/reigns/deck/valid/minmax
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "min": 1,
+    "max": 4
+  }
+  
+}

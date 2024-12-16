@@ -1,0 +1,22 @@
+meta {
+  name: Ajouter un nouveau createur
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://mdubois.alwaysdata.net/apiReigns/v3/reigns/createur
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name" : "Solène",
+    "mail" : "solene@gmail.com",
+    "password" : "$2y$10$MzitsoOwssrAtzsl95B1bOb9Ee8Cr6mhzndTLAvS5b/hTw5MGevaK",
+    "sexe" : "F",
+    "date" : "2004-08-03"
+  }
+  
+}

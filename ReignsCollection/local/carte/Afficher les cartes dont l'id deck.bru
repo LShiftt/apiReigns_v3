@@ -1,0 +1,18 @@
+meta {
+  name: Afficher les cartes dont l'id deck
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8000/v3/reigns/carte/deck/id
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "id": 12
+    }
+  
+}

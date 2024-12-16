@@ -1,0 +1,19 @@
+meta {
+  name: Créer un admin (BCrypt)
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/v1/reigns/administrateur
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mail" : "bdmin@gmail.com",
+    "password" : "bbbb"
+  }
+  
+}

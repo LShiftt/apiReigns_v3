@@ -1,0 +1,18 @@
+meta {
+  name: Supprimer un créateur
+  type: http
+  seq: 7
+}
+
+delete {
+  url: http://localhost:8000/v1/reigns/createur
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id" : "22"
+  }
+  
+}

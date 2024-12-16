@@ -1,0 +1,19 @@
+meta {
+  name: check
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://mdubois.alwaysdata.net/apiReigns/v3/reigns/administrateur/check
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mail" : "bdmin@gmail.com",
+    "password" : "bbbb"
+  }
+  
+}

@@ -1,0 +1,17 @@
+meta {
+  name: tous les decks dont le créateur n'a pas créer de carte
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8000/v3/reigns/deck/noparticipation
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id" : 20 
+  }
+}

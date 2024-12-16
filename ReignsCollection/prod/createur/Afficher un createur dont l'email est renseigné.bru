@@ -1,0 +1,18 @@
+meta {
+  name: Afficher un createur dont l'email est renseigné
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://mdubois.alwaysdata.net/apiReigns/v3/reigns/createur/mail
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mail" : "c@gmail.com"
+  }
+  
+}

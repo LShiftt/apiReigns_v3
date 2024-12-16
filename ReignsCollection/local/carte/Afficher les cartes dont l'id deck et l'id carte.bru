@@ -1,0 +1,19 @@
+meta {
+  name: Afficher les cartes dont l'id deck et l'id carte
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8000/v3/reigns/carte/idcarteiddeck
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id_carte": 47,
+    "id_deck": 12
+  }
+  
+}

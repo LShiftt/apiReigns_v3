@@ -1,0 +1,22 @@
+meta {
+  name: Ajouter un like
+  type: http
+  seq: 8
+}
+
+patch {
+  url: https://mdubois.alwaysdata.net/apiReigns/v3/reigns/createur/like
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+      {
+          "id": 20
+      },
+      {
+          "id": 21
+      }
+  ]
+}

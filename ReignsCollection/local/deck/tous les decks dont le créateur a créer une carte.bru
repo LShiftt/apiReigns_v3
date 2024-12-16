@@ -1,0 +1,17 @@
+meta {
+  name: tous les decks dont le créateur a créer une carte
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8000/v3/reigns/deck/participation
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id" : 20 
+  }
+}

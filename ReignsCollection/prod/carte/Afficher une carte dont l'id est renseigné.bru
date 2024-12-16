@@ -1,0 +1,18 @@
+meta {
+  name: Afficher une carte dont l'id est renseigné
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://mdubois.alwaysdata.net/apiReigns/v3/reigns/carte/id
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id" : "33"
+  }
+  
+}

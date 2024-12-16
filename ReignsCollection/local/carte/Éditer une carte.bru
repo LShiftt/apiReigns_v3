@@ -1,0 +1,26 @@
+meta {
+  name: Éditer une carte
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:8000/v1/reigns/carte
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "42",
+      "texte": "uuuuuuuuuuuuuuuuAPIuuuuuuuuuuuuuuuuuuuuuuuAPIuuuuuuuuuuuuuuuuuuuuuuuAPIuuuuuuuuuuuuuuuuuuuuuuuAPIuuuuuuuuuuuuuuuuuuuuuuuAPIuuuuuuuuuuuuuuuuuuuuuuuAPIuuuuuuuuuuuuuuuuuuuuuuuAPIuuuuuuuuuuuuuuuuuuuuuuuAPIuuuuuuu",
+      "valChoix1": "10/-5",
+      "valChoix2": "10/-5",
+      "date": "2024-11-20",
+      "ordre": 1,
+      "idCrea": 21,
+      "idAdmin": null,
+      "idDeck": 9
+  }
+  
+}

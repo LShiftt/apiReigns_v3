@@ -1,0 +1,18 @@
+meta {
+  name: Bannir
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://localhost:8000/v3/reigns/createur/ban
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id" : "21"
+  }
+  
+}

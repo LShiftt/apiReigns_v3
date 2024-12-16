@@ -1,0 +1,18 @@
+meta {
+  name: Afficher un admin dont l'email est renseigné
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8000/v1/reigns/administrateur/mail
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mail" : "admin@gmail.com"
+  }
+  
+}

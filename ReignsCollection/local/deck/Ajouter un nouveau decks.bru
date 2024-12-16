@@ -1,0 +1,24 @@
+meta {
+  name: Ajouter un nouveau decks
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/v1/reigns/deck
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "titre": "FromApi",
+      "body": "J'ai fait ce deck grâce à l'api",
+      "date_debut": "2024-11-20",
+      "date_fin": "2024-12-30",
+      "nb_cartes": 2,
+      "nb_jaime": 0,
+      "id_administrateur": 1
+    }
+  
+}

@@ -62,6 +62,7 @@ return [
     // carte aléatoire
     ['GET', '/v3/reigns/carteAlea', 'alea@getAll'], // toutes les cartes aléatoires
     ['POST', '/v3/reigns/carteAlea/id', 'alea@getByNum'], // une par son num_carte
+    ['POST', '/v3/reigns/carteAlea/idcreateuriddeck', 'alea@getByIdCreateurAndIdDeck'], // une par son id_deck et id_createur
 
     ['POST', '/v3/reigns/carteAlea', 'alea@add'], // ajoute un carte aléatoire
     ['PATCH', '/v3/reigns/carteAlea', 'alea@edit'], // modifier un carte aléatoire

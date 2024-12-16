@@ -36,5 +36,17 @@ class Alea extends Model
         $sth = $this->query($sql, [':id' => $id]);
         return $sth->rowCount() > 0;
     }
+
+    public function getByIdCreateurAndIdDeck(
+        int $idCrea,
+        int $idDeck
+    ) {
+        dump("exec model");
+        
+        $sql = 'SELECT * FROM `{$this->tableName}`  WHERE id_deck = :idDeck AND id_createur = :idCrea';
+        $sth = $this->query($sql, [':idCrea' => $idCrea, ':idDeck' => $idDeck]);
+        $res = $sth->fetch();
+        return $res;
+    }
 }
 

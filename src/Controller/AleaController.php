@@ -27,6 +27,21 @@ class AleaController extends Controller
         $res = Alea::getInstance()->findOneBy($criterias);
         Controller::json($res);
     }
+    public function getByIdCreateurAndIdDeck()
+    {
+        $input = file_get_contents('php://input');
+        $data = json_decode($input, true);
+        $idCrea = (int) $data['idCrea'];
+        $idDeck = (int) $data['idDeck'];
+
+        $criterias = [
+            'id_createur' => $idCrea,
+            'id_deck' => $idDeck
+        ];
+
+        $res = Alea::getInstance()->findOneBy($criterias);
+        Controller::json($res);
+    }
 
     public function add()
     {
